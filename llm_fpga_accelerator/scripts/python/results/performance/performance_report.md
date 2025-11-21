@@ -2,35 +2,44 @@
 
 ## Executive Summary
 
-- **Peak Speedup**: 5.85x over CPU
-- **Peak Throughput**: 25.70 GOPS
+- **Peak Speedup**: 0.03x over CPU
+- **Peak Throughput**: 0.00 GOPS
 - **Best Matrix Size**: 128×128
-- **Average Hardware Utilization**: 19.2%
-- **Hardware Efficiency**: 92.3%
-- **Average Numerical Error**: 0.0975%
+- **Average Hardware Utilization**: 0.0%
+- **Hardware Efficiency**: 0.0%
+- **Average Numerical Error**: 3.7691%
 
 ## Detailed Analysis
 
+**32x32 Matrix**:
+  - Speedup: 0.00x
+  - Throughput: 0.00 GOPS
+  - Cycles: 0
+  - Utilization: 0.0%
+  - Numerical Error: 3.4961%
+
 **64x64 Matrix**:
-  - Speedup: 3.15x
-  - Throughput: 12.70 GOPS
-  - Cycles: 8050
-  - Utilization: 12.7%
-  - Numerical Error: 0.1100%
+  - Speedup: 0.00x
+  - Throughput: 0.00 GOPS
+  - Cycles: 0
+  - Utilization: 0.0%
+  - Numerical Error: 3.4319%
 
 **128x128 Matrix**:
-  - Speedup: 5.85x
-  - Throughput: 25.70 GOPS
-  - Cycles: 31900
-  - Utilization: 25.7%
-  - Numerical Error: 0.0850%
+  - Speedup: 0.03x
+  - Throughput: 0.00 GOPS
+  - Cycles: 0
+  - Utilization: 0.0%
+  - Numerical Error: 4.3792%
 
 ### Scaling Behavior
 
-- **Scaling Exponent**: 1.01
-- **Interpretation**: Sublinear scaling (bandwidth limited)
+- **Scaling Exponent**: 0.00
+- **Interpretation**: Poor scaling (overhead dominated)
 
 ## Recommendations
 
 - **Low utilization detected**: Consider optimizing data flow or increasing parallelism
+- **Limited speedup**: Investigate memory bandwidth bottlenecks
 - **Optimal operating point**: Use 128×128 matrices for best performance
+- **Numerical accuracy**: Consider higher precision arithmetic if needed
